@@ -1,0 +1,79 @@
+
+
+
+
+
+
+body {
+    
+    background-color: #2b2525;
+}
+
+button {
+    background-color: #681717; /* tom vinho, combinando com o tema da Hu Tao */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #7a1818;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.galeria img {
+    width: 200px;     
+    height: 200px;     
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* define o espaço entre as imagens */
+    margin-top: 30px;
+    flex-wrap: wrap; /* permite que elas quebrem linha em telas pequenas */
+}
+
+.galeria img {
+    width: 200px;      /* define largura fixa */
+    height: 200px;     /* define altura fixa */
+    object-fit: cover; /* recorta a imagem para preencher sem deformar */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
